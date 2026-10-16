@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi-User Chat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="chat-container">
+    <div id="header">💬 Multi-User Chat</div>
+
+    <div id="chat"></div>
+
+    <div id="input-bar">
+        <select id="currentUser"></select>
+        <input type="text" id="msg" placeholder="Type a message">
+        <button id="sendBtn">Send</button>
+    </div>
+
+    <div id="add-user">
+        <input type="text" id="username" placeholder="Enter new user name">
+        <button onclick="addUser()">Add User</button>
+    </div>
+</div>
+
+<script src="client.js"></script>
+</body>
+</html>

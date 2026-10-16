@@ -1,0 +1,44 @@
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Fullscreen container */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(135deg, #fff 50%, #ffb6c1 50%); /* white + light pink split */
+}
+
+/* Login section */
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background: linear-gradient(135deg, #fff, #ffc0cb);
+  color: #333;
+}
+
+/* Chat window */
+#chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(135deg, #fff, #ffe4ec); /* soft pink gradient */
+}
+#messages li.self {
+  background: #ffccd5; /* soft pink bubble */
+  align-self: flex-end;
+}
+#messages li.other {
+  background: #fff; /* white bubble */
+  align-self: flex-start;
+  border: 1px solid #ddd;
+}
